@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { Noto_Serif_Bengali } from "next/font/google";
+import Marquee from "react-fast-marquee";
 
 const notoSarifBegali = Noto_Serif_Bengali({
   subsets: ["latin", "bengali"],
@@ -26,7 +27,6 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Header/>
-         {/* <Marquee /> */}
         <main className="container mx-auto max-w-7xl">{children}</main>
         {/* <footer className="container mx-auto max-w-7xl"><Footer/></footer> */}
        {/* <ToastContainer />   */}

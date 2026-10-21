@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { Suspense } from 'react';
 import Navlinks from './Navlinks';
+import Marquee from './Marquee';
 
 const date = new Date().toLocaleDateString("bn-BD", {
     dateStyle: "full",
@@ -51,6 +52,7 @@ const Header = () => {
 
         </div>
         <Navlinks/>
+          <Marquee/>
         </div>
 
 
