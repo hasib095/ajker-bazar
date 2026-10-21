@@ -51,8 +51,16 @@ const Header = () => {
 
 
         </div>
-        <Navlinks/>
-          <Marquee/>
+
+    <Suspense fallback={"loading"}>
+     <Navlinks/>
+    </Suspense>
+        
+         <Suspense fallback={"loading"}>
+     <Marquee/>
+    </Suspense>
+        
+         
         </div>
 
 
