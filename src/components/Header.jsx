@@ -1,14 +1,19 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { Suspense } from 'react';
+import Navlinks from './Navlinks';
+
+const date = new Date().toLocaleDateString("bn-BD", {
+    dateStyle: "full",
+});
 
 const Header = () => {
 
-    const date = new Date().toLocaleDateString("bn-BD", {
-        dateStyle: "full",
-    });
+
     return (
-        <div className="navbar bg-base-100 shadow-sm mt-2">
+        <div>
+            <div className="navbar bg-base-100 shadow-sm mt-2">
             <div className="flex-1 container mx-auto max-w-7xl">
 
                 <div className="flex flex-col  gap-1 sm:flex-row sm:gap-2">
@@ -43,7 +48,12 @@ const Header = () => {
                 </Link>
             </div>
 
+
         </div>
+        <Navlinks/>
+        </div>
+
+
     );
 };
 
