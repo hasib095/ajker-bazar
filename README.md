@@ -12,6 +12,23 @@ AjkerBazar is a Bengali-language market price application that helps users explo
 
 BazarDor is a Next.js-based web application that displays daily prices for essential products, including rice, lentils, cooking oil, vegetables, and fish. Users can browse products by category, track price changes, and compare prices for specific products across different markets. The interface is designed around the Bengali language and Bangladeshi number formatting.
 
+## Project Screenshot
+
+
+<img width="1503" height="891" alt="image" src="https://github.com/user-attachments/assets/591afc8e-2543-479d-8499-2209a446b957" />
+<img width="1205" height="858" alt="image" src="https://github.com/user-attachments/assets/a8120426-9ba8-4b32-b863-b8cac01ae6cc" />
+<img width="877" height="911" alt="image" src="https://github.com/user-attachments/assets/eff22e48-2031-48a2-b32e-d0f7565e7992" />
+<img width="1606" height="677" alt="image" src="https://github.com/user-attachments/assets/dce237b0-4f64-4385-9d7a-a4323e9f4060" />
+<img width="735" height="752" alt="image" src="https://github.com/user-attachments/assets/83b335e1-c09d-4bf2-a8f8-64cff8e84db5" />
+<img width="853" height="833" alt="image" src="https://github.com/user-attachments/assets/2e6db249-5123-41c7-ba68-b49e62277b56" />
+<img width="536" height="392" alt="image" src="https://github.com/user-attachments/assets/39917ceb-fcdd-4f67-96af-606259d81eb1" />
+<img width="915" height="582" alt="image" src="https://github.com/user-attachments/assets/a7337695-ac3f-46f5-a543-355360db3ce8" />
+
+
+## Live Demo
+
+
+
 ## Key Features
 
 1. Category-Based Product Browsing** — Explore categories and lists of everyday essential products.
