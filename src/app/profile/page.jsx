@@ -1,6 +1,7 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
+import { redirect } from 'next/navigation';
 import React from 'react';
 import { toast } from 'react-toastify';
 
@@ -19,6 +20,7 @@ const UserPage = () => {
         }
 
         toast.success("সফলভাবে সাইন আউট হয়েছে");
+        redirect("/");
     };
 
     const handleUserUpdate = async (e) => {

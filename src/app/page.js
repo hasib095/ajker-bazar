@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <div>
      <Benner/>
-     <PriceHighLowAll/>
-     
+     <PriceHighLowAll/>   
     </div>
   );
 }

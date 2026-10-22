@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { toast } from 'react-toastify';
 import { authClient } from "@/lib/auth-client";
+import { redirect } from 'next/navigation';
 
 const SignInPage = () => {
 
