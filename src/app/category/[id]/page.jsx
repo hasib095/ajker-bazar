@@ -1,14 +1,20 @@
 import ProductCart from '@/components/ProductCart';
 import SortableProductList from '@/components/SortableProductList';
+import { notFound } from 'next/navigation';
 import React from 'react';
 
 const page =async ({params}) => {
 
     const {id}=await params;
  
-    const res=await fetch(`https://api.abcz.workers.dev/api/bazardor/products?category=${id}`);
+    const res=await fetch(`https://api.abcz.workers.dev/api/bazardor/products?category=${(id)}`);
+    if (!res) notFound();
+
     const data=await res.json();
-    console.log(data);
+    if (!Array.isArray(data)) {
+      throw new Error('Invalid category products response');
+    }
+    if (data.length === 0) notFound();
 
     return (
        <div className="min-h-screen bg-[#F0F5F0] p-4">

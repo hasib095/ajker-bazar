@@ -19,8 +19,8 @@ const ProductPageContent = async ({ params }) => {
   
     const { id } = await params;
   const response = await fetch(`https://api.abcz.workers.dev/api/bazardor/products/${(id)}`);
-  const product = await response.json();
-  console.log(product)
+  if (response.status === 404) notFound();
+ const product = await response.json();
 
 
 
