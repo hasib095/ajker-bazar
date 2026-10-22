@@ -3,6 +3,7 @@ import { authClient } from '@/lib/auth-client';
 import Image from 'next/image';
 
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import React from 'react';
 import { toast } from 'react-toastify';
 
@@ -28,6 +29,7 @@ const UserInfo = () => {
                 {
                     position: "top-center",
                 });
+        redirect("/");
     };
     return (
         <div>

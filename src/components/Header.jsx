@@ -50,7 +50,7 @@ const Header = () => {
                 </div>
             </div>
 
-           
+        
             <Suspense
                 fallback={
                     <div className="h-10 animate-pulse bg-base-200" />
