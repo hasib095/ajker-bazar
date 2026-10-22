@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 const UserInfo = () => {
     const { data: session } = authClient.useSession();
     const user = session?.user;
-    console.log(user);
+   // console.log(user);
 
     const handleSignout = async () => {
         const { error } = await authClient.signOut();
@@ -164,7 +164,7 @@ const UserInfo = () => {
                         </button>
                     </Link>
                     <Link href={"/signup"}>
-                        <button className="btn  bg-red-700 px-3 py-1.5 font-semibold text-white transition-colors hover:bg-red-800">
+                        <button className="btn  bg-green-700 px-3 py-1.5 font-semibold text-white transition-colors hover:bg-red-800">
                             সাইন আপ
                         </button>
                     </Link>
