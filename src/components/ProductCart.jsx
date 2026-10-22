@@ -33,7 +33,7 @@ const ProductCart = ({ data, title, direction, icon, id }) => {
                 {data.map((product) => (
                     <Link
                         key={product.id}
-                        href={`/products/${product.id}`}
+                        href={`/product/${product.id}`}
                         className="rounded-2xl border border-[#e1eae2] bg-[#fbfdfb] p-3 transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
                     >
 
