@@ -27,7 +27,7 @@ BazarDor is a Next.js-based web application that displays daily prices for essen
 
 ## Live Demo
 
-
+[**View Ajker Bazar Live Demo →**](https://ajker-bazar-nine.vercel.app/)
 
 ## Key Features
 
