@@ -1,11 +1,11 @@
-# BazarDor
+# AjkerBazar
 
 **Everyday essential prices in Bangladesh at a glance.**
 
-BazarDor is a Bengali-language market price application that helps users explore everyday product prices in Bangladesh. Compare current prices, track price increases and decreases, sort products by price, and review price ranges across different markets.
+AjkerBazar is a Bengali-language market price application that helps users explore everyday product prices in Bangladesh. Compare current prices, track price increases and decreases, sort products by price, and review price ranges across different markets.
 
 <p align="center">
-  <img src="./public/bazar-hero.png" alt="BazarDor market basket illustration" width="240" />
+  <img src="./public/bazar-hero.png" alt="AjkerBazar market basket illustration" width="240" />
 </p>
 
 ## Project Overview
@@ -14,20 +14,20 @@ BazarDor is a Next.js-based web application that displays daily prices for essen
 
 ## Key Features
 
-1. **Category-Based Product Browsing** — Explore categories and lists of everyday essential products.
-2. **Today's Prices and Changes** — See whether prices have increased, decreased, or remained unchanged compared to the previous day.
-3. **Price-Based Sorting** — Sort products within a category from lowest to highest price or highest to lowest price.
-4. **Market-Based Price Comparison** — View minimum, maximum, and average prices, along with market names and categories.
-5. **Account and Sign-In** — Use Better Auth for email/password authentication and configured Google or GitHub sign-in.
+1. Category-Based Product Browsing** — Explore categories and lists of everyday essential products.
+2. Today's Prices and Changes** — See whether prices have increased, decreased, or remained unchanged compared to the previous day.
+3. Price-Based Sorting** — Sort products within a category from lowest to highest price or highest to lowest price.
+4. Market-Based Price Comparison** — View minimum, maximum, and average prices, along with market names and categories.
+5. Account and Sign-In** — Use Better Auth for email/password authentication and configured Google or GitHub sign-in.
 
 ## Technologies Used
 
-- **Next.js 16** — App Router and server-rendered pages
-- **React 19** — Component-based user interfaces
-- **Tailwind CSS 4** and **DaisyUI** — Styling and UI components
-- **Better Auth** — Email/password and OAuth authentication
-- **MongoDB** — Database for Better Auth user and session data
-- **BazarDor Products API** — Product prices and market information
+- Next.js 16 — App Router and server-rendered pages
+- React 19 — Component-based user interfaces
+- Tailwind CSS 4 and DaisyUI — Styling and UI components
+- Better Auth— Email/password and OAuth authentication
+- MongoDB — Database for Better Auth user and session data
+- AjkerBazar Products API — Product prices and market information
 
 ## Dependencies
 
