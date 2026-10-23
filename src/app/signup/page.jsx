@@ -141,9 +141,9 @@ const SignUpPage = () => {
                     {/* Sign in link */}
                     <p className="mt-5 text-center text-sm text-gray-700">
                         অ্যাকাউন্ট আছে?{" "}
-                        <a href="/login" className="font-semibold text-green-700 hover:underline">
+                        <Link href="/signup" className="font-semibold text-green-700 hover:underline">
                             সাইন ইন করুন
-                        </a>
+                        </Link>
                     </p>
                 </div>
 
