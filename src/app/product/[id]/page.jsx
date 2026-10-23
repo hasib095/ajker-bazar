@@ -1,6 +1,9 @@
+import { auth } from "@/lib/auth";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
+import { headers } from "next/headers";
+import { authClient } from "@/lib/auth-client";
 
 const priceFormat = new Intl.NumberFormat("bn-BD", {
   maximumFractionDigits: 1,
@@ -16,8 +19,10 @@ const getUnitLabel = (unit) => {
 
 const ProductPageContent = async ({ params }) => {
   
+  const session = await auth.api.getSession({ headers: await headers() });
+  if (!session?.user) redirect("/signin");
   
-    const { id } = await params;
+  const { id } = await params;
   const response = await fetch(`https://api.abcz.workers.dev/api/bazardor/products/${(id)}`);
   if (response.status === 404) notFound();
  const product = await response.json();

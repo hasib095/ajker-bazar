@@ -30,6 +30,19 @@ const SignUpPage = () => {
         }
     };
 
+    const googleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    };
+
+    const githubSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "github"
+        })
+    }
+
+
     return (
         <div>
             <div className="flex min-h-screen flex-col items-center bg-green-50 px-4 py-10">
@@ -117,6 +130,7 @@ const SignUpPage = () => {
                         <button
                             type="button"
                             className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 py-3 text-sm font-semibold text-gray-800 hover:bg-gray-50"
+                            onClick={googleSignIn}
                         >
                             <svg className="h-4 w-4" viewBox="0 0 48 48">
                                 <path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 8 3l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z" />
@@ -130,6 +144,8 @@ const SignUpPage = () => {
                         <button
                             type="button"
                             className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 py-3 text-sm font-semibold text-gray-800 hover:bg-gray-50"
+                            onClick={githubSignIn}
+
                         >
                             <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.100.8 2.200v3.300c0 .3.2.7.8.6A11.500 11.500 0 0 0 23.500 12C23.500 5.700 18.300.5 12 .5z" />
@@ -141,7 +157,7 @@ const SignUpPage = () => {
                     {/* Sign in link */}
                     <p className="mt-5 text-center text-sm text-gray-700">
                         অ্যাকাউন্ট আছে?{" "}
-                        <Link href="/signup" className="font-semibold text-green-700 hover:underline">
+                        <Link href="/signin" className="font-semibold text-green-700 hover:underline">
                             সাইন ইন করুন
                         </Link>
                     </p>
